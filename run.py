@@ -1,6 +1,10 @@
 import random
 
-word = ["python", "computer", "java", "internet", "website",
-        "virus", "coding", "software", "boolean", "parameter"]
- 
-print(word)
+words = ["python", "computer", "java", "internet", "website"]
+
+
+def get_word():
+    """
+    selects a random word from the list of words
+    """
+    return (random.choice(words)).lower()
