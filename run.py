@@ -1,4 +1,6 @@
-words = "python", "computer", "java"
+import random
 
-print(words)
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+word = ["python", "computer", "java", "internet", "website",
+        "virus", "coding", "software", "boolean", "parameter"]
+ 
+print(word)
