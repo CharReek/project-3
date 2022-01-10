@@ -24,19 +24,25 @@ def game_play(word):
     while not guess and tries > 0:
        guessed = input("Please input a word or a letter: ").upper()
        if len(guessed) == 1 and guessed.isalpha():
-          if guessed in letters_guessed:
+         if guessed in letters_guessed:
              print("You already gussed that letter, please try again")
          elif:
             print(f"{guessed} is not in the word")
             lives -=1 
             letters_guessed.append(guessed)
+         else:
+            print("well done you guessed correctly!")
+            letters_guessed.append(guessed)
+            list_of_words = list(complete_word)  # turns a string to a list
+            indicies = [i for i, letter in enumerate(word) if letter == guessed] # finds where guessed occurs in the word
+
        elif len(guessed) == len(word) and guessed.isalpha():
       
        else:
           print("This is not a valid guess, please try again.")
-      print(hangman_pic(tries))
-      print(complete_word)
-      print("\n")
+       print(hangman_pic(tries))
+       print(complete_word)
+       print("\n")
 
 
 
