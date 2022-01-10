@@ -1,1 +1,1 @@
-word = "python"
+from words import words
