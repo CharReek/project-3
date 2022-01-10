@@ -26,6 +26,10 @@ def game_play(word):
        if len(guessed) == 1 and guessed.isalpha():
           if guessed in letters_guessed:
              print("You already gussed that letter, please try again")
+         elif:
+            print(f"{guessed} is not in the word")
+            lives -=1 
+            letters_guessed.append(guessed)
        elif len(guessed) == len(word) and guessed.isalpha():
       
        else:
