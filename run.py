@@ -35,6 +35,12 @@ def game_play(word):
             letters_guessed.append(guessed)
             list_of_words = list(complete_word)  # turns a string to a list
             indicies = [i for i, letter in enumerate(word) if letter == guessed] # finds where guessed occurs in the word
+            
+            for index in indicies:#replaces the underscore with the guessed letter
+               list_of_words[index] = guessed
+            complete_word = "".join(list_of_words)
+            if "_" not in complete_word:
+               guess = True
 
        elif len(guessed) == len(word) and guessed.isalpha():
       
