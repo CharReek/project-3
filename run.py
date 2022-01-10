@@ -62,10 +62,9 @@ def game_play(word):
     else:
        print("Looks like you ran out of lives, Better luck next time")
 
-
-
 # hangman code taken from a youtube video 
 def hangman_pic(tries):
+
     stages = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -137,3 +136,7 @@ def hangman_pic(tries):
                    -
                 """
     ]
+
+def start():
+   word = select_word()
+   game_play(word)
