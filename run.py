@@ -15,7 +15,7 @@ def game_play(word):
     complete_word = "_" * len(word)
     guess = False
     words_guessed = []
-    letters_guesses = []
+    letters_guessed = []
     lives = 6
     print("Let's play a game of Hangman")
     print(hangman_pic(tries))
@@ -23,6 +23,18 @@ def game_play(word):
     print("\n")
     while not guess and tries > 0:
        guessed = input("Please input a word or a letter: ").upper()
+       if len(guessed) == 1 and guessed.isalpha():
+          if guessed in letters_guessed:
+             print("You already gussed that letter, please try again")
+       elif len(guessed) == len(word) and guessed.isalpha():
+      
+       else:
+          print("This is not a valid guess, please try again.")
+      print(hangman_pic(tries))
+      print(complete_word)
+      print("\n")
+
+
 
 # hangman code taken from a youtube video 
 def hangman_pic(tries):
