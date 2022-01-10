@@ -17,8 +17,10 @@ def game_play(word):
     words_guessed = []
     letters_guesses = []
     lives = 6
-    print("Lets play a game of Hangman")
+    print("Let's play a game of Hangman")
     print(hangman_pic(tries))
+    print(complete_word)
+    print("\n")
 
 # hangman code taken from a youtube video 
 def hangman_pic(tries):
