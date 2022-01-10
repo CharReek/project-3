@@ -21,6 +21,8 @@ def game_play(word):
     print(hangman_pic(tries))
     print(complete_word)
     print("\n")
+    while not guess and tries > 0:
+       guessed = input("Please input a word or a letter: ").upper()
 
 # hangman code taken from a youtube video 
 def hangman_pic(tries):
