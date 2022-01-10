@@ -26,7 +26,7 @@ def game_play(word):
        if len(guessed) == 1 and guessed.isalpha():
          if guessed in letters_guessed:
              print("You already gussed that letter, please try again")
-         elif:
+         elif guessed not in word:
             print(f"{guessed} is not in the word")
             lives -=1 
             letters_guessed.append(guessed)
@@ -43,7 +43,15 @@ def game_play(word):
                guess = True
 
        elif len(guessed) == len(word) and guessed.isalpha():
-      
+          if guessed in words_guessed:
+             print("you have already guessed this word")
+          elif guessed != word:
+             print("That guess is incorrect, Please try again")
+             lives -= 1
+             words_guessed.append(guessed)
+          else:
+             guessed = True
+             complete_word = word 
        else:
           print("This is not a valid guess, please try again.")
        print(hangman_pic(tries))
