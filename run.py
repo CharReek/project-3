@@ -42,7 +42,7 @@ def game_play(word):
             if "_" not in complete_word:
                guess = True
 
-       elif len(guessed) == len(word) and guessed.isalpha():
+       elif len(guessed) == len(word) and guessed.isalpha(): #conditional for guessing a word
           if guessed in words_guessed:
              print("you have already guessed this word")
           elif guessed != word:
@@ -57,6 +57,10 @@ def game_play(word):
        print(hangman_pic(tries))
        print(complete_word)
        print("\n")
+    if guess:
+       print("Well done you guessed the word correctly!")
+    else:
+       print("Looks like you ran out of lives, Better luck next time")
 
 
 
