@@ -1,3 +1,6 @@
+"""
+imports the random function, use to shuffle words
+"""
 import random
 
 from words import words
@@ -19,7 +22,7 @@ def game_play(word):
     """
     game play function
     """
-    complete_word = "_" * len(word)
+    complete_word = " _ " * len(word)
     guess = False
     words_guessed = []
     letters_guessed = []
@@ -77,6 +80,10 @@ def game_play(word):
 
 
 def hangman_pic(tries):
+    """
+    code for hangman pictures
+    this was taken from a youtube video
+    """
 
     stages = [  # final state: head, torso, both arms, and both legs
         """
@@ -153,6 +160,9 @@ def hangman_pic(tries):
 
 
 def start():
+    """
+    sets up the game ready to play
+    """
     word = select_word()
     game_play(word)
 
