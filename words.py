@@ -1,3 +1,6 @@
+"""
+all the words for the hangman game
+"""
 words = [
     'python',
     'internet',
