@@ -85,7 +85,7 @@ def hangman_pic(tries):
                    |      O
                    |     \|/
                    |      |
-                   |     / \\
+                   |     / \\ 
                    -
                 """,
         # head, torso, both arms, and one leg
