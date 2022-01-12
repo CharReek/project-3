@@ -5,8 +5,6 @@ import random
 
 from words import words
 
-# select word function
-
 
 def select_word():
     """
@@ -15,14 +13,17 @@ def select_word():
     word = random.choice(words)
     return word.upper()
 
-# game play function
+def play_again():
+    print("Would you like to play again? (Y/N)")
+    try:
+    ex
 
 
 def game_play(word):
     """
     game play function
     """
-    complete_word = " _ " * len(word)
+    complete_word = "_" * len(word)
     guess = False
     words_guessed = []
     letters_guessed = []
@@ -74,7 +75,7 @@ def game_play(word):
     if guess:
         print("Well done you guessed the word correctly!")
     else:
-        print("Looks like you ran out of lives, Better luck next time")
+        print(f"Looks like you ran out of lives, The correct word was:{word}")
 
 # hangman code taken from a youtube video
 
