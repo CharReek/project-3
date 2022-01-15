@@ -14,19 +14,11 @@ def select_word():
     return word.upper()
 
 
-def play_again():
-    print("Would you like to play a game of hangman? 1.Yes 2.N0)")
-    try:
-        print("test")
-    except:
-        print("test")
-
-
 def game_play(word):
     """
     game play function
     """
-    complete_word = "_" * len(word)
+    complete_word = "*" * len(word)
     guess = False
     words_guessed = []
     letters_guessed = []
@@ -56,7 +48,7 @@ def game_play(word):
                 for index in indicies:
                     list_of_words[index] = guessed
                 complete_word = "".join(list_of_words)
-                if "_" not in complete_word:
+                if "*" not in complete_word:
                     guess = True
 
         # conditional for guessing a word
@@ -80,8 +72,6 @@ def game_play(word):
     else:
         print(f"Looks like you ran out of lives, The correct word was:{word}")
 
-
-play_again()
 # hangman code taken from a youtube video
 
 
