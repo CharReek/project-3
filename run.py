@@ -6,6 +6,21 @@ import random
 from words import words
 
 
+def play_again():
+    """
+    function that asked if the person
+    wants to play the game again
+    """
+    print("Would you like to play again? 1.Yes 2.No")
+    try:
+        choice = int(input())
+        if choice == 1:
+            start()
+    except ValueError():
+        print("Please input a valid answer")
+        play_again()
+
+
 def select_word():
     """
     select word functiom
@@ -69,8 +84,10 @@ def game_play(word):
         print("\n")
     if guess:
         print("Well done you guessed the word correctly!")
+        play_again()
     else:
         print(f"Looks like you ran out of lives, The correct word was:{word}")
+        play_again()
 
 # hangman code taken from a youtube video
 
