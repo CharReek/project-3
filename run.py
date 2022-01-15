@@ -14,7 +14,7 @@ class Colors:
     RED = '\033[91m'
     GREEN = '\033[92m'
     WHITE = '\033[0m'
-    BLUE = '\33[104m'
+    BLUE = '\33[34m'
 
 
 def select_word():
