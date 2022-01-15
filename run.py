@@ -41,13 +41,15 @@ def game_play(word):
         guessed = input("Please input a word or a letter: ").upper()
         if len(guessed) == 1 and guessed.isalpha():
             if guessed in letters_guessed:
-                print("You already gussed that letter, please try again")
+                print(Colors.RED + "You already gussed that letter,Try again"
+                      + Colors.WHITE)
             elif guessed not in word:
                 print(f"{guessed} is not in the word")
                 tries -= 1
                 letters_guessed.append(guessed)
             else:
-                print("well done you guessed correctly!")
+                print(Colors.GREEN + "well done you guessed correctly!"
+                      + Colors.WHITE)
                 letters_guessed.append(guessed)
                 list_of_words = list(complete_word)  # turns a string to a list
                 # finds where guessed occurs in the word
@@ -80,7 +82,8 @@ def game_play(word):
         print(complete_word)
         print("\n")
     if guess:
-        print("Well done you guessed the word correctly!")
+        print(Colors.GREEN + "Well done you guessed the word correctly!"
+              + Colors.WHITE)
         play_again()
     else:
         print(f"Looks like you ran out of lives, The correct word was:{word}")
