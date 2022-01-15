@@ -5,10 +5,6 @@ import random
 
 from words import words
 
-class colors:
-    RED = '\033[91m'
-    GREEN = '\033[92m'
-
 
 def select_word():
     """
@@ -79,7 +75,6 @@ def game_play(word):
     else:
         print(f"Looks like you ran out of lives, The correct word was:{word}")
         play_again()
-
 # hangman code taken from a youtube video
 
 
@@ -95,9 +90,7 @@ def play_again():
         try:
             if again == "Y":
                 restart = True
-
                 start()
-
             elif again == "N":
                 restart = True
                 print("Thank you for playing Hangman")
