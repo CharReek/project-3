@@ -84,6 +84,7 @@ def game_play(word):
         play_again()
     else:
         print(f"Looks like you ran out of lives, The correct word was:{word}")
+        print("\n")
         play_again()
 # hangman code taken from a youtube video
 
