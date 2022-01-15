@@ -13,10 +13,13 @@ def select_word():
     word = random.choice(words)
     return word.upper()
 
+
 def play_again():
-    print("Would you like to play again? (Y/N)")
+    print("Would you like to play a game of hangman? 1.Yes 2.N0)")
     try:
-    ex
+        print("test")
+    except:
+        print("test")
 
 
 def game_play(word):
@@ -77,6 +80,8 @@ def game_play(word):
     else:
         print(f"Looks like you ran out of lives, The correct word was:{word}")
 
+
+play_again()
 # hangman code taken from a youtube video
 
 
