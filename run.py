@@ -15,6 +15,8 @@ def play_again():
     choice = int(input())
     if choice == 1:
         start()
+    elif choice == 2:
+        print("Thank you for playing")
     else:
         print("Please input a valid number")
         play_again()
