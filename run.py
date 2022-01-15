@@ -3,7 +3,17 @@ imports the random function, use to shuffle words
 """
 import random
 
+
 from words import words
+
+
+class Colors:
+    """
+    colours for the text
+    """
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    WHITE = '\033[0m'
 
 
 def select_word():
