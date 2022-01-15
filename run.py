@@ -5,6 +5,10 @@ import random
 
 from words import words
 
+class colors:
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+
 
 def select_word():
     """
