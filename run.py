@@ -81,6 +81,7 @@ def game_play(word):
         else:
             print("This is not a valid guess, please try again.")
         print(hangman_pic(tries))
+        print("Letters Guessed:" + ",". join(sorted(letters_guessed)) + "\n")
         print(complete_word)
         print("\n")
     if guess:
