@@ -12,12 +12,11 @@ def play_again():
     wants to play the game again
     """
     print("Would you like to play again? 1.Yes 2.No")
-    try:
-        choice = int(input())
-        if choice == 1:
-            start()
-    except ValueError():
-        print("Please input a valid answer")
+    choice = int(input())
+    if choice == 1:
+        start()
+    else:
+        print("Please input a valid number")
         play_again()
 
 
