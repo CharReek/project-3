@@ -67,9 +67,10 @@ def game_play(word):
         # conditional for guessing a word
         elif len(guessed) == len(word) and guessed.isalpha():
             if guessed in words_guessed:
-                print("you have already guessed this word")
+                print("You have already guessed this word")
             elif guessed != word:
-                print("That guess is incorrect, Please try again")
+                print(Colors.RED + "That guess is incorrect, Please try again"
+                      + Colors.WHITE)
                 tries -= 1
                 words_guessed.append(guessed)
             else:
@@ -110,7 +111,8 @@ def play_again():
                 start()
             elif again == "N":
                 restart = True
-                print("Thank you for playing Hangman")
+                print(Colors.GREEN + "Thank you for playing Hangman"
+                      + Colors.WHITE)
             else:
                 raise ValueError("Please enter Y or N")
 
