@@ -14,6 +14,7 @@ class Colors:
     RED = '\033[91m'
     GREEN = '\033[92m'
     WHITE = '\033[0m'
+    BLUE = '\33[104m'
 
 
 def select_word():
@@ -75,9 +76,10 @@ def game_play(word):
                 guessed = True
                 complete_word = word
         else:
-            print("This is not a valid guess, please try again.")
+            print(Colors.RED + "This is not a valid guess, please try again."
+                  + Colors.WHITE)
         print(hangman_pic(tries))
-        print(f"Lives remaining:{tries}\n")
+        print(f"{Colors.BLUE}Lives remaining:{tries}{Colors.WHITE}\n")
         print("Letters Guessed:" + ",". join(sorted(letters_guessed)) + "\n")
         print(complete_word)
         print("\n")
@@ -86,7 +88,8 @@ def game_play(word):
               + Colors.WHITE)
         play_again()
     else:
-        print(f"Looks like you ran out of lives, The correct word was:{word}")
+        print(f"{Colors.RED} Looks like you ran out of lives"
+              f" The correct word was:{Colors.WHITE} {word}")
         print("\n")
         play_again()
 # hangman code taken from a youtube video
