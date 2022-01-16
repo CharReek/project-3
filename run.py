@@ -39,7 +39,7 @@ def game_play(word):
     print(complete_word)
     print("\n")
     while not guess and tries > 0:
-        guessed = input("Please input a word or a letter: ").upper()
+        guessed = input("Please input a word or a letter:\n").upper()
         if len(guessed) == 1 and guessed.isalpha():
             if guessed in letters_guessed:
                 print(Colors.RED + "You already gussed that letter,Try again"
