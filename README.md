@@ -1,5 +1,7 @@
 # Hangman
-## How to play 
+## How to play
+* My game of hangman is easy to play as it requires only basic input. Users will have to type in a letter each time they would like to guess and then hit enter. The user can also guess the word by typing this out in the input and hitting enter. 
+
 ## Features
 ## Technologies
 ## Testing 
