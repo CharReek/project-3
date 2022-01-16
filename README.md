@@ -23,11 +23,20 @@ When the user first loads up the game they will see the base hangman structure w
    * In order to make sure that a number or symbol could not be inputted i tested this by trialing it. 
       * I tested this by playing the game and inputting both numbers and symbols to make sure the correct message came up. The message that came up when a number or Symbol was inputted is "This is not a valid guess. Please try again". I also checked that it did not deduct a life from the lives.
 4. Testing Correct word guees 
-5. Testing incorrect word guess 
-6. Testing all correct guesses 
-7. Testing rnning out of lives
-8. Testing play again - Yes
-9. Testing play again - No 
+  *  Giving the ability to the user to guess the correct work i had to test this function. 
+     * I did this by guessing a few letters and then checking in my list of words to see what i could be. I then inputted the correct word to ensure that it showed the correct message showed up. I also tested that it then called the restart game function. 
+5. Testing incorrect word guess
+   * Giving the ability to the user to guess the correct work i had to test this function. 
+      *  I did this by guessing a random word that i knew was not in my list to make sure that it showed the correct message and took the user back to guessing a letter. 
+6. Testing running out of lives
+   * Due to having a life counter i needed to test that these depreciated when the guess was incorrect and that the correct part of the hangman was added each time. 
+      * To do this i tested both getting a letter correct and incorrect to make sure that a life was taken away and a part of the hangman picture was added on. I tested this mutiple times until the hangman picture was completed 
+7. Testing play again - Yes
+   * The addition of the play again feature at the end of the game, gives the user the option to either replay the game or exit the function. 
+     * To test this i inputted both correct and incorrect letters untill i ran out of lives. When the restart question came up i enter "Y", This then restarted the game.
+8. Testing play again - No 
+   * The addition of the play again feature at the end of the game, gives the user the option to either replay the game or exit the function. 
+     * To test this i inputted both correct and incorrect letters untill i ran out of lives. When the restart question came up i enter "N". This then brings up the message "Thank you for playing Hangman"
 
 ## Deployment 
 The below steps show how i deployed my game to heroku
