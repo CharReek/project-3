@@ -1,11 +1,31 @@
-# Hangman
+# Coding Hangman
 ## How to play
 My game of hangman is easy to play as it requires only basic input. Users will have to type in a letter each time they would like to guess and then hit enter. The user can also guess the word by typing this out in the input and hitting enter. 
 The aim of the game is to guess the word before you run out of lives. Incorrect guesses result in the user losing a life. 
 When the user first loads up the game they will see the base hangman structure with stars underneath. Each star represents a letter in the word. As the user guesses these correctly the star will then be replaced by the correct guess. There is 2 outcomes to the game either the user wins or loses. If the user guesses all the letter or the word correctly they will win the game. If not they will lose and they correct word will be shown. 
 
 ## Features
+### Start Page 
+* When the users first goes onto the game it shows as the below.This takes the user straight into the game. From here they can begin to input letters.
 
+insert picture
+### Correct Guess 
+* When the user makes a correct guess they will be congratulated and then the letter will be added to the stars at the bottom in the correct place. The congratulations message shows up in green so it stands out from the rest of the text. 
+
+insert picture
+### Incorrect Guess 
+*  When the user makes an incorrect guess a life is deducted and a part of the hangman picture is added. 
+
+### Repeat letter 
+* If the user guesses a letter twice then a message will come up asking them to try again and input another letter. 
+
+### Lives Remaining
+* The lives remaining feature shows the user how many attempts they have left. 
+
+### Letters Guessed 
+* The letters guessed shows what letters the user has already guessed so they are aware of what letters have been ruled out. 
+### Play Again 
+* The play again feature gives the user to play the game again, They have 2 answers Yes or No, if they chose yes the game restarts if they say no they get a message that says thank you for playing 
 ## Technologies
 * Python was the language of choice to program this game. 
 * Github was used to store all the code.
