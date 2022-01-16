@@ -13,6 +13,15 @@ When the user first loads up the game they will see the base hangman structure w
 * Heroku was used to deploy the game.
 
 ## Testing 
+1. Testing correct letter 
+2. Testing incorrect letter 
+3. Testing Number or symbol input
+4. Testing Correct word guees 
+5. Testing incorrect word guess 
+6. Testing all correct guesses 
+7. Testing rnning out of lives
+8. Testing play again - Yes
+9. Testing play again - No 
 
 ## Deployment 
 The below steps show how i deployed my game to heroku
