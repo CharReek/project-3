@@ -48,6 +48,11 @@ insert picture
 * Heroku was used to deploy the game.
 
 ## Testing 
+### Validator testing 
+* No errors were found when the code was passed through the PEP8 linter
+![pep8Test] (assests/images/pep8.PNG)
+
+ ### Manual Testing 
 1. Testing correct letter 
    * In order to make sure that the correct letter showed up when enter i tested this by doing the below: 
       * To make sure I guessed the correct letters i tested this before adding in the random function, this way i could ensure that i was guessing the correct letters. I Guessed each of the correct letter to ensure that it replaced the * and the Well Done message came up.
@@ -72,6 +77,9 @@ insert picture
 8. Testing play again - No 
    * The addition of the play again feature at the end of the game, gives the user the option to either replay the game or exit the function. 
      * To test this i inputted both correct and incorrect letters untill i ran out of lives. When the restart question came up i enter "N". This then brings up the message "Thank you for playing Hangman"
+
+### Bugs 
+* As stated above i have manual tested all outcomes of my game to ensure there were no bugs. 
 
 ## Deployment 
 The below steps show how i deployed my game to heroku
