@@ -10,24 +10,37 @@ When the user first loads up the game they will see the base hangman structure w
 ### Start Page 
 * When the users first goes onto the game it shows as the below.This takes the user straight into the game. From here they can begin to input letters.
 
-![start page] (assests/images/hangman 1.png)
+insert picture
 ### Correct Guess 
 * When the user makes a correct guess they will be congratulated and then the letter will be added to the stars at the bottom in the correct place. The congratulations message shows up in green so it stands out from the rest of the text. 
 
-insert picture
+![StartPage] (assests/images/hangman 1.PNG)
+
 ### Incorrect Guess 
 *  When the user makes an incorrect guess a life is deducted and a part of the hangman picture is added. 
+
+![IncorrectGuess] (assests/images/hangman9.PNG)
 
 ### Repeat letter 
 * If the user guesses a letter twice then a message will come up asking them to try again and input another letter. 
 
+![RepeatLetter] (assests/images/hangman10.PNG)
+
 ### Lives Remaining
 * The lives remaining feature shows the user how many attempts they have left. 
 
+![Lives] (assests/images/hangman3.PNG)
+
 ### Letters Guessed 
 * The letters guessed shows what letters the user has already guessed so they are aware of what letters have been ruled out. 
+
+![LettersGuessed] (assests/images/hangman4.PNG)
+
 ### Play Again 
 * The play again feature gives the user to play the game again, They have 2 answers Yes or No, if they chose yes the game restarts if they say no they get a message that says thank you for playing 
+
+![PlayAgain] (assests/images/hangman8.PNG) 
+
 ## Technologies
 * Python was the language of choice to program this game. 
 * Github was used to store all the code.
