@@ -10,11 +10,12 @@ When the user first loads up the game they will see the base hangman structure w
 ### Start Page 
 * When the users first goes onto the game it shows as the below.This takes the user straight into the game. From here they can begin to input letters.
 
-insert picture
+![StartPage](https://github.com/CharReek/project-3/blob/main/assests/images/hangman%201.PNG)
+
 ### Correct Guess 
 * When the user makes a correct guess they will be congratulated and then the letter will be added to the stars at the bottom in the correct place. The congratulations message shows up in green so it stands out from the rest of the text. 
 
-![StartPage] (https://github.com/CharReek/project-3/blob/main/assests/images/hangman%201.PNG)
+![CorrectGuess](https://github.com/CharReek/project-3/blob/main/assests/images/hangman%201.PNG)
 
 ### Incorrect Guess 
 *  When the user makes an incorrect guess a life is deducted and a part of the hangman picture is added. 
