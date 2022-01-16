@@ -14,7 +14,7 @@ insert picture
 ### Correct Guess 
 * When the user makes a correct guess they will be congratulated and then the letter will be added to the stars at the bottom in the correct place. The congratulations message shows up in green so it stands out from the rest of the text. 
 
-![StartPage] (assests/images/hangman 1.PNG)
+![StartPage] (https://github.com/CharReek/project-3/blob/main/assests/images/hangman%201.PNG)
 
 ### Incorrect Guess 
 *  When the user makes an incorrect guess a life is deducted and a part of the hangman picture is added. 
