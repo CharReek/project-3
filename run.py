@@ -42,15 +42,15 @@ def game_play(word):
         guessed = input("Please input a word or a letter:\n").upper()
         if len(guessed) == 1 and guessed.isalpha():
             if guessed in letters_guessed:
-                print(Colors.RED + "You already gussed that letter,Try again"
-                      + Colors.WHITE)
+                print(Colors.RED + "You already gussed that letter,Try again" +
+                      Colors.WHITE)
             elif guessed not in word:
                 print(f"{guessed} is not in the word")
                 tries -= 1
                 letters_guessed.append(guessed)
             else:
-                print(Colors.GREEN + "well done you guessed correctly!"
-                      + Colors.WHITE)
+                print(Colors.GREEN + "well done you guessed correctly!" +
+                      Colors.WHITE)
                 letters_guessed.append(guessed)
                 list_of_words = list(complete_word)  # turns a string to a list
                 # finds where guessed occurs in the word
@@ -69,24 +69,24 @@ def game_play(word):
             if guessed in words_guessed:
                 print("You have already guessed this word")
             elif guessed != word:
-                print(Colors.RED + "That guess is incorrect, Please try again"
-                      + Colors.WHITE)
+                print(Colors.RED + "That guess is incorrect, Try again" +
+                      Colors.WHITE)
                 tries -= 1
                 words_guessed.append(guessed)
             else:
                 guessed = True
                 complete_word = word
         else:
-            print(Colors.RED + "This is not a valid guess, please try again."
-                  + Colors.WHITE)
+            print(Colors.RED + "This is not a valid guess, please try again." +
+                  Colors.WHITE)
         print(hangman_pic(tries))
         print(f"{Colors.BLUE}Lives remaining:{tries}{Colors.WHITE}\n")
         print("Letters Guessed:" + ",". join(sorted(letters_guessed)) + "\n")
         print(complete_word)
         print("\n")
     if guess:
-        print(Colors.GREEN + "Well done you guessed the word correctly!"
-              + Colors.WHITE)
+        print(Colors.GREEN + "Well done you guessed the word correctly!" +
+              Colors.WHITE)
         play_again()
     else:
         print(f"{Colors.RED} Looks like you ran out of lives"
@@ -111,8 +111,8 @@ def play_again():
                 start()
             elif again == "N":
                 restart = True
-                print(Colors.GREEN + "Thank you for playing Hangman"
-                      + Colors.WHITE)
+                print(Colors.GREEN + "Thank you for playing Hangman" +
+                      Colors.WHITE)
             else:
                 raise ValueError("Please enter Y or N")
 
