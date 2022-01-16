@@ -14,8 +14,14 @@ When the user first loads up the game they will see the base hangman structure w
 
 ## Testing 
 1. Testing correct letter 
+   * In order to make sure that the correct letter showed up when enter i tested this by doing the below: 
+      * To make sure I guessed the correct letters i tested this before adding in the random function, this way i could ensure that i was guessing the correct letters. I Guessed each of the correct letter to ensure that it replaced the * and the Well Done message came up.
 2. Testing incorrect letter 
-3. Testing Number or symbol input
+   * To test that the incorrect letter returned the right output i tested this by playing the game and using different letters. 
+     * I inputted random letters to see if they were in the word and the correct message came up. I did this by using more obscure letters such a "Z". I then added in correct letter to make sure that the incorrect function worked each time. I also made sure that the letters added into the letter guessed list.
+3. Testing Number or symbol input 
+   * In order to make sure that a number or symbol could not be inputted i tested this by trialing it. 
+      * I tested this by playing the game and inputting both numbers and symbols to make sure the correct message came up. The message that came up when a number or Symbol was inputted is "This is not a valid guess. Please try again". I also checked that it did not deduct a life from the lives.
 4. Testing Correct word guees 
 5. Testing incorrect word guess 
 6. Testing all correct guesses 
